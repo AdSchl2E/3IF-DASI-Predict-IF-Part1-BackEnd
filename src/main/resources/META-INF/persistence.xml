@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+  <persistence-unit name="fr.insalyon.dasi.test_PredictIF_jar_1.0-SNAPSHOTPU" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <class>metier.modele.Client</class>
+    <class>metier.modele.Medium</class>
+    <class>metier.modele.ProfilAstral</class>
+    <class>metier.modele.Spirite</class>
+    <class>metier.modele.Cartomancier</class>
+    <class>metier.modele.Astrologue</class>
+    <class>metier.modele.Consultation</class>
+    <class>metier.modele.Employe</class>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:derby://localhost:1527/PredictIF"/>
+      <property name="javax.persistence.jdbc.user" value="dasi"/>
+      <property name="javax.persistence.jdbc.driver" value="org.apache.derby.jdbc.ClientDriver"/>
+      <property name="javax.persistence.jdbc.password" value="dasi"/>
+      <property name="javax.persistence.schema-generation.database.action" value="drop-and-create"/>
+    </properties>
+  </persistence-unit>
+</persistence>
